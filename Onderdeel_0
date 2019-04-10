@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+Using namespace std;
+
+int main(int argc, char** argv){
+	cout << “You have entered “<< argc << “ arguments: “ << “\n”;
+  int count = 0;
+  string tmp = “”;
+  string letter = argv[1];
+
+  for (int i = 2; i < argc; i++){
+	  for (int j = 0; argv[i][j] != ‘\0’;  j++){
+		  tmp = argv[i][j];
+		
+		  if (tmp == letter){
+			  count = count + 1;
+		  }
+	  }
+  }
+  
+  cout << “Het aantal ” << letter << “’s in de zin is: ” << count << “\n”;
+  return 0;
+}
