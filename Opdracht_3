@@ -1,0 +1,9 @@
+Ik heb gekozen voor parted
+Ik heb de instructies gevolg in de handleiding van gentoo.
+Ik heb gebruik gemaakt van ext4, omdat dat aanbevolen werd.
+De CFLAGS en CXXFLAGS variabelen definen de optimalisatie flags voor GCC C en C++ compilers.
+The MAKEOPTS variable defines how many parallel compilations should occur when installing a package. A good choice is the number of CPUs (or CPU cores) in the system plus one, but this guideline isn't always perfect.
+ 
+app-admin/sysklogd - Offers the traditional set of system logging daemons. The default logging configuration works well out of the box which makes this package a good option for beginners.
+app-admin/syslog-ng - An advanced system logger. Requires additional configuration for anything beyond logging to one big file. More advanced users may choose this package based on its logging potential; be aware additional configuration is a necessity for any kind of smart logging.
+app-admin/metalog - A highly-configurable system logger.
